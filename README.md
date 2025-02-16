@@ -20,23 +20,7 @@ composer require syradev/html5_patch
 
 ```composer.json
 "extra": {
-    "patches": {
-        "typo3/cms-frontend": [
-            "packages/html5_patch/patches/typo3-cms-frontend-classes-http-requesthandler-php.patch"
-        ],
-        "typo3/cms-seo": [
-            "packages/html5_patch/patches/typo3-cms-seo-classes-canonical-canonicalgenerator-php.patch"
-        ],
-        "typo3/cms-fluid": [
-            "packages/html5_patch/patches/typo3-cms-fluid-classes-viewhelpers-formviewhelper-php.patch"
-        ],
-        "typo3/cms-core": [
-            "packages/html5_patch/patches/typo3-cms-core-classes-page-pagerenderer-php.patch"
-        ],
-        "typo3fluid/fluid": [
-            "packages/html5_patch/patches/typo3fluid-fluid-src-core-viewhelper-tagbuilder-php.patch"
-        ],
-    }
+    "patches-file": "vendor/syradev/html5_patch/composer.patches.json"
 }
 ```
 
