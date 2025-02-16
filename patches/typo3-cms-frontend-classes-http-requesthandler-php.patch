@@ -1,0 +1,11 @@
+--- /dev/null
++++ ../Classes/Http/RequestHandler.php
+@@ -915,7 +915,7 @@
+         if (count($hrefLangs) > 1) {
+             $data = [];
+             foreach ($hrefLangs as $hrefLang => $href) {
+-                $data[] = sprintf('<link %s/>', GeneralUtility::implodeAttributes([
++                $data[] = sprintf('<link %s>', GeneralUtility::implodeAttributes([
+                     'rel' => 'alternate',
+                     'hreflang' => $hrefLang,
+                     'href' => $href,

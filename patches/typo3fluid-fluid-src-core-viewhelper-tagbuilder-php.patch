@@ -1,0 +1,15 @@
+--- /dev/null
++++ ../src/Core/ViewHelper/TagBuilder.php
+@@ -290,7 +290,11 @@
+         if ($this->hasContent() || $this->forceClosingTag) {
+             $output .= '>' . $this->content . '</' . $this->tagName . '>';
+         } else {
+-            $output .= ' />';
++            if(in_array($this->tagName, ['input', 'img', 'br', 'hr', 'link', 'meta'])) {
++                $output .= '>';
++            } else {
++                $output .= ' />';
++            }
+         }
+         return $output;
+     }

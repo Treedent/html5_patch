@@ -1,0 +1,29 @@
+--- /dev/null
++++ ../Classes/Page/PageRenderer.php
+@@ -197,7 +197,7 @@
+      * @var string
+      * @deprecated will be removed in TYPO3 v13.0
+      */
+-    protected $metaCharsetTag = '<meta http-equiv="Content-Type" content="text/html; charset=|" />';
++    protected $metaCharsetTag = '<meta http-equiv="Content-Type" content="text/html; charset=|" >';
+ 
+     /**
+      * @var string
+@@ -213,7 +213,7 @@
+      * @var string
+      * @deprecated will be removed in TYPO3 v13.0.
+      */
+-    protected $baseUrlTag = '<base href="|" />';
++    protected $baseUrlTag = '<base href="|" >';
+ 
+     /**
+      * @var string
+@@ -223,7 +223,7 @@
+     /**
+      * @var string
+      */
+-    protected $shortcutTag = '<link rel="icon" href="%1$s"%2$s />';
++    protected $shortcutTag = '<link rel="icon" href="%1$s"%2$s >';
+ 
+     // Static inline code blocks
+     /**

@@ -1,0 +1,11 @@
+--- /dev/null
++++ ../Classes/Canonical/CanonicalGenerator.php
+@@ -75,7 +75,7 @@
+             $canonical = '<link ' . GeneralUtility::implodeAttributes([
+                 'rel' => 'canonical',
+                 'href' => $href,
+-            ], true) . '/>' . LF;
++            ], true) . '>' . LF;
+             $this->typoScriptFrontendController->additionalHeaderData[] = $canonical;
+             return $canonical;
+         }
