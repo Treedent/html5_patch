@@ -1,6 +1,7 @@
 {
   "name": "syradev/html5_patch",
   "type": "typo3-cms-extension",
+  "title": "html5 self-closing tags patcher",
   "description": "This extension patches TYPO3 to eliminate non-HTML5-standard self-closing tags.",
   "license": [
     "GPL-2.0-or-later"
